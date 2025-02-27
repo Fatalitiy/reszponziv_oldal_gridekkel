@@ -1,55 +1,49 @@
 body {
-   
+    background-color: greenyellow;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
 header {
-    background-color: green;
-    text-transform: uppercase;
-   
-    border-radius: 10px;
-   
+    border: 5px solid black;
+    text-align: center;
+    padding: 10px;
 }
+
 a {
-    color:black;
-  
-    border: 4px solid black;
-    border-radius: 8px;
-    margin: 5px;
-    white-space: nowrap; /* chatgpt kód */
-    display: inline-block; /*chatgpt kód */
-      
-}
-
-nav {
-    margin-bottom: 10px;
-
-}
-* {
-    box-sizing: border-box;
-}
-img {
- 
-    border: 5px solid black;
-    border-radius: 10px;
-}
-section {
-    margin-top: 10px;
+    text-decoration: none;
     padding: 5px;
-    border: 5px solid black;
-    border-radius: 15px;
-    background-color: green;
+    display: inline-block;
+    margin: 5px;
 }
-p {
-    border: 5px solid black;
-    border-radius: 10px;
+
+a:hover {
     background-color: greenyellow;
 }
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+section {
+    padding: 10px;
+}
+
 article {
-    
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     gap: 10px;
 }
-#bekezdes_footer {
-    background-color: green;
-    border: 5px solid black;
-    font-size: large;
+
+@media (max-width: 800px) {
+    article {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
-
+@media (max-width: 500px) {
+    article {
+        grid-template-columns: 1fr;
+    }
+}
